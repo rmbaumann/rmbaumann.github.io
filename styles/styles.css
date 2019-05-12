@@ -2,8 +2,6 @@ body {
     font-size: 12px;
     font-family: 'Oswald', sans-serif;
     font-family: 'Heebo', sans-serif;
-    margin-right: 20%;
-    margin-left: 20%;
     background-color: #d7ccda;
     margin-top: 30px;
     margin-bottom:20px;
@@ -14,14 +12,14 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #475657;
+    background-color: white;
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
   }
   
   li {
-    float: right;
+    float: left;
   }
   
   li a {
@@ -35,10 +33,7 @@ body {
   li a:hover {
     background-color: #111;
   }
-  
-  .active {
-    background-color: #393A10;
-  }
+
 
   h1 {
       font: 500
@@ -58,7 +53,7 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(reva1) );
 
   /* Set a specific height */
-  height: 80%;
+  height: 50%;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -132,12 +127,6 @@ body {
       margin-top: 0;
     }
   }
-
-  html {
-      margin-right:20%;
-      margin-left:20%;
-  }
-
 
    /* Three image containers */
 .column {
