@@ -9,6 +9,12 @@ body {
     margin-bottom:20px;
   }
   
+  .jumbotron{
+    background-color:#999999;
+    color: white;
+    text-align:center;
+ }
+
   ul {
     list-style-type: none;
     margin: 0;
