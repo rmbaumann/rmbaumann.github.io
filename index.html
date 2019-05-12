@@ -1,0 +1,139 @@
+<!--
+============================================
+; Title: Portfolio
+; Author: Reva Baumann
+; Date: 09 May 2019
+; Modified By: Reva Baumann
+; Description: Index page 
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html>
+    <head></head>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="google" content="notranslate">
+        <meta http-equiv="Content-Language" content="en">
+        <title>Reva Baumann - Web Developer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="styles/styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Heebo|Oswald|Rock+Salt" rel="stylesheet"> 
+    </head>
+
+    <body>
+
+      
+        <ul>
+            <li><a class="active" href="#about">About</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+        
+        <div class="hero-image">
+            <div class="hero-text">
+                <img src="Images/reva baumann.png" alt="logo">
+                                <h1 style="font-size:50px">Hi, I'm Reva</h1>
+                <p>I create beautiful & functional websites for clients large and small. Below are the services I provide.</p>
+                <img src="Images/Reva1.jpg" alt="Reva Smiling">
+                <button>Hire Me</button>
+            </div>
+        </div>
+
+
+
+        <h2>Who Am I?</h2>
+            <p>I'm currently working on obtaining my Bachelor's from Bellevue University in Web Development. I'm passionate about designing websites and creating valuable content. I combine my creative strengths and my technical skill to create something amazing. </p>
+        
+        <h3>My Recent Work</h3>
+           <div class="row">
+               <div class="column">
+                    <a href=https://rmbaumann.github.io/bioSite/><img src="Images/Liambio.JPG" alt="biosite" style="width:100%">
+               </div>
+               <div class="column">
+                   <a href=https://github.com/rmbaumann/web-231/><img src="Images/web231.JPG" alt="web231" style="width:100%">
+               </div>
+               <div class="column">
+                   <a href=https://github.com/rmbaumann/web-330/><img src="Images/web330.JPG" alt="web330" style="width:100%">
+               </div>
+               <div>
+                   <a href=https://github.com/rmbaumann/rmbaumann.github.io/><img src="Images/prototype.JPG" alt="prototype" style="width:25%">
+               </div>
+           </div>
+
+           <h4>My Skills</h4>
+
+           <div class="container">
+             <div class="skills html">90%</div>
+           </div>
+           
+           <p>CSS</p>
+           <div class="container">
+             <div class="skills css">80%</div>
+           </div>
+           
+           <p>JavaScript</p>
+           <div class="container">
+             <div class="skills js">65%</div>
+           </div>
+
+
+
+        <h4>Testimonials</h4>
+        <h5>Contact Me</h5>
+
+
+        <p>
+            
+        <div class="contact">
+        <div style="text-align:center">
+          <h5>Contact Me</h5>
+          <p>Let's get a cup of coffee</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="Images/Europe.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="First Name">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Last Name">
+              <label for="phone">Phone Number</label>
+              <input type="text" id="phone" name="phone" placeholder="Phone Number">
+              <label for="subject">Details</label>
+              <textarea id="subject" name="subject" placeholder="Tell me more about what you're looking for?" style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div> 
+
+</body>
+
+
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+} 
+</script>
+    
+</html>
