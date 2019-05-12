@@ -36,21 +36,16 @@
             <img src="Images/penguinweb1.png" alt="logo">
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Dropdown
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">About</a>
-                    <a class="dropdown-item" href="#">Work</a>
-                    <a class="dropdown-item" href="#">Contact</a>
+                    <a class="dropdown-item" href="#about">About</a>
+                    <a class="dropdown-item" href="#work">Work</a>
+                    <a class="dropdown-item" href="#contact">Contact</a>
                   </div>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Disabled</a>
                 </li>
               </ul>
 
@@ -64,18 +59,23 @@
                                 <h1 style="font-size:50px">Hi, I'm Reva</h1>
                 <p>I create beautiful & functional websites for clients large and small. Below are the services I provide.</p>
                 <img src="Images/Reva1.jpg" alt="Reva Smiling">
-                <button>Hire Me</button>
+                <textarea id="myText">
+                  I'd love to collaborate!
+              </textarea>
+              <button onclick="sendMail(); return false">Send</button>
             </div>
         </div>
 
 
 
         <h2>Who Am I?</h2>
+        <div id="about">
             <p>My name is Reva, I’m from Omaha, Nebraska. I started creating websites for fun in my free time, my voracious learning style gave me unlimited passion and pursuit for knowledge. I decided to pursue a Bachelors Degree in Web Development in 2018. I love to combine my love and education in Art, with all things tech. With my formal background in creating beautiful things, I can use it to make something that’s alluring, functional and accomplishes the goals set by my client. My skills provide an all-in-one solution, from front end development, logo and branding design, social media expertise and back end development.
               </p>
+            </div>
         
         <h3>My Recent Work</h3>
-           <div class="row">
+           <div id="work">
                <div class="column">
                     <a href=https://rmbaumann.github.io/bioSite/><img src="Images/Liambio.JPG" alt="biosite" style="width:100%">
                </div>
@@ -114,7 +114,7 @@
 
         <p>
             
-        <div class="contact">
+        <div id="contact">
         <div style="text-align:center">
           <h5>Contact Me</h5>
           <p>Let's get a cup of coffee</p>
@@ -141,25 +141,17 @@
 
 </body>
 
-
 <script>
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+function sendMail() {
+    var link = "mailto:revambaumann@gmail.com"
+             + "?cc=myCCaddress@example.com"
+             + "&subject=" + escape("This is my subject")
+             + "&body=" + escape(document.getElementById('myText').value)
+    ;
 
-// Get the header
-var header = document.getElementById("myHeader");
-
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-} 
+    window.location.href = link;
+}
 </script>
+
     
 </html>
