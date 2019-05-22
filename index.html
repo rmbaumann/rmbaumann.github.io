@@ -17,12 +17,15 @@
         <title>Reva Baumann - Web Developer</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <link href="styles/styles.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Heebo|Oswald|Rock+Salt" rel="stylesheet"> 
     </head>
-   
 
+    <!-- Body of Website -->
+    <!-- Header Jumbotron -->
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#"></a>
@@ -52,12 +55,12 @@
             </div>
           </nav>
         
-        
+        <!-- Hero-Image/Banner Image -->
         <div class="hero-image">
             <div class="hero-text">
 
                                 <h1 style="font-size:50px">Hi, I'm Reva</h1>
-                <p>I create beautiful & functional websites for clients large and small. Below are the services I provide.</p>
+                <p>I create beautiful & functional websites for clients large and small.</p>
                 <img src="Images/Reva1.jpg" alt="Reva Smiling">
                 <textarea id="myText">
                   I'd love to collaborate!
@@ -68,30 +71,70 @@
 
 
 
-        <h2>Who Am I?</h2>
-        <div id="about">
-            <p>My name is Reva, I’m from Omaha, Nebraska. I started creating websites for fun in my free time, my voracious learning style gave me unlimited passion and pursuit for knowledge. I decided to pursue a Bachelors Degree in Web Development in 2018. I love to combine my love and education in Art, with all things tech. With my formal background in creating beautiful things, I can use it to make something that’s alluring, functional and accomplishes the goals set by my client. My skills provide an all-in-one solution, from front end development, logo and branding design, social media expertise and back end development.
+        <h2 style="font-size:50px">Who am I?</h2>
+        <div id="about" class="container-fluid padding">
+          <div class="row padding">
+            <div class="col-lg-4">
+              <img class="img-fluid" src="Images/penguin.jpg" alt="Reva travels abroad to take photos with exotic birds">
+              <h3>Web Developer, Jeep Enthusiast, Artist & Bibliophile</h3>
+              <p>My name is Reva, I’m from Omaha, Nebraska. I started creating websites for fun in my free time, my voracious learning style gave me unlimited passion and pursuit for knowledge. I decided to pursue a Bachelors Degree in Web Development in 2018. I love to combine my love and education in Art, with all things tech. With my formal background in creating beautiful things, I can use it to make something that’s alluring, functional and accomplishes the goals set by my client. My skills provide an all-in-one solution, from front end development, logo and branding design, social media expertise and back end development.
               </p>
             </div>
-        
-        <h3>My Recent Work</h3>
-           <div id="work">
-               <div class="column">
-                    <a href=https://rmbaumann.github.io/bioSite/><img src="Images/Liambio.JPG" alt="biosite" style="width:100%">
-               </div>
-               <div class="column">
-                   <a href=https://github.com/rmbaumann/web-231/><img src="Images/web231.JPG" alt="web231" style="width:100%">
-               </div>
-               <div class="column">
-                   <a href=https://github.com/rmbaumann/web-330/><img src="Images/web330.JPG" alt="web330" style="width:100%">
-               </div>
-               <div>
-                   <a href=https://github.com/rmbaumann/rmbaumann.github.io/><img src="Images/prototype.JPG" alt="prototype" style="width:25%"></a>
-               </div>
-           </div>
-          </div>
 
-           <h4>My Skills</h4>
+            
+        
+        <h3 style="font-size:40px">My Recent Work</h3>
+           <div id="work">
+          <div class="container-fluid padding">
+            <div class="row padding">
+              <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="card">
+                  <img class="card-img-top" src="Images/Liambio.JPG" alt="Liam's Biosite">
+                  <div class="card-body">
+                    <h4 class="card-title">Liam's BioSite</h4>
+                    <p>This website was created to showcase my nephew Liam's personal skills, experiences and resume.</p>
+                    <a href="https://rmbaumann.github.io/bioSite/" class="btn btn-outline-secondary">Liam's Website</a>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                  <div class="card">
+                    <img class="card-img-top" src="Images/github.JPG" alt="Github Logo">
+                    <div class="card-body">
+                      <h4 class="card-title">Intro to JavaScript</h4>
+                      <p>View the Repository for Introduction to JavaScript.</p>
+                      <a href="https://github.com/rmbaumann/web-231" class="btn btn-outline-secondary">GitHub Repository</a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="card">
+                      <img class="card-img-top" src="Images/github.JPG" alt="Github Logo">
+                      <div class="card-body">
+                        <h4 class="card-title">Node.js</h4>
+                        <p>View the respository for Node.js.</p>
+                        <a href="https://github.com/rmbaumann/web-340" class="btn btn-outline-secondary">GitHub Repository</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                      <div class="card">
+                        <img class="card-img-top" src="Images/github.JPG" alt="GitHub Logo">
+                        <div class="card-body">
+                          <h4 class="card-title">JavaScript II</h4>
+                          <p>View the Repository for Javascript II.</p>
+                          <a href="https://github.com/rmbaumann/web-330" class="btn btn-outline-secondary">GitHub Repository</a>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+            </div>
+
+          <br /> <br />
+
+           <h4 style="font-size:30px">My Skills</h4>
 
            <div class="container">
              <p>HTML</p>
@@ -110,36 +153,39 @@
 
 
 
-        <h4>Testimonials</h4>
-        <h5>Contact Me</h5>
-
-
+        <h4 style="font-size:30px">Contact Me</h4>
         <p>
             
         <div id="contact">
         <div style="text-align:center">
-          <h5>Contact Me</h5>
-          <p>Let's get a cup of coffee</p>
-        </div>
-        <div class="row">
-          <div class="column">
-            <img src="Images/Europe.jpg" style="width:100%">
+
+          
+          <div class="container contact-form">
+                      <form method="post">
+                          <h3>Let's get a cup of coffee</h3>
+                         <div class="row">
+                              <div class="col-md-6">
+                                  <div class="form-group">
+                                      <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                                  </div>
+                                  <div class="form-group">
+                                      <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                                  </div>
+                                  <div class="form-group">
+                                      <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                                  </div>
+                                  <div class="form-group">
+                                      <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="form-group">
+                                      <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                                  </div>
+                              </div>
+                          </div>
+                      </form>
           </div>
-          <div class="column">
-            <form action="/action_page.php">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="First Name">
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Last Name">
-              <label for="phone">Phone Number</label>
-              <input type="text" id="phone" name="phone" placeholder="Phone Number">
-              <label for="subject">Details</label>
-              <textarea id="subject" name="subject" placeholder="Tell me more about what you're looking for?" style="height:170px"></textarea>
-              <input type="submit" value="Submit">
-            </form>
-          </div>
-        </div>
-      </div> 
 
 </body>
 
