@@ -43,8 +43,13 @@ body {
 
 
   h1 {
-      font: 500
+      font: 500;
       font-family: "Oswald", sans-serif;
+  }
+
+  h2 {
+    font:400;
+    font-family: "Oswald", sans-serif;
   }
 
   body, html {
@@ -165,25 +170,6 @@ body {
   color: white; /* White text color */
 }
 
-/* Skills Colors */
-.html {width: 90%; background-color: #393A10;} /* Green */
-.css {width: 80%; background-color: #4a6d7c;} /* Blue */
-.js {width: 65%; background-color: #1ccad8;} /* Red */
-
-.hero-image {
-  margin: 100px;
-}
-
-.footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: 393A10;
-  color: black;
-  font-family: 'Courier New', Courier, monospace;
-  text-align: center;
-}
-
 /* Contact form information below */
 .contact-form{
   background: #fff;
@@ -248,4 +234,25 @@ body {
   position: static;
   z-index: auto;
 }
+
+
+/* Skills Colors */
+.html {width: 90%; background-color: #393A10;} /* Green */
+.css {width: 80%; background-color: #4a6d7c;} /* Blue */
+.js {width: 65%; background-color: #1ccad8;} /* Red */
+
+.hero-image {
+  margin: 100px;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: 393A10;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
 
