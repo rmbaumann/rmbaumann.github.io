@@ -2,7 +2,6 @@
 
 body {
     font-size: 12px;
-    font-family: 'Oswald', sans-serif;
     font-family: 'Heebo', sans-serif;
     background-color: #d7ccda;
     margin-top: 30px;
@@ -155,16 +154,18 @@ body {
 
 /* Container for skill bars */
 .container {
-  width: 100%; /* Full width */
-  background-color: #ddd; /* Grey background */
+  width: 90%; /* Full width */
+  background-color: white; /* Grey background */
 }
 
+/* Skills Details */
 .skills {
   text-align: right; /* Right-align text */
-  padding: 10px; /* Add some padding */
+  padding: 15px; /* Add some padding */
   color: white; /* White text color */
 }
 
+/* Skills Colors */
 .html {width: 90%; background-color: #393A10;} /* Green */
 .css {width: 80%; background-color: #4a6d7c;} /* Blue */
 .js {width: 65%; background-color: #1ccad8;} /* Red */
@@ -174,11 +175,77 @@ body {
 }
 
 .footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: 393A10;
-  color: white;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
   text-align: center;
 }
+
+/* Contact form information below */
+.contact-form{
+  background: #fff;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 70%;
+}
+.contact-form .form-control{
+  border-radius:1rem;
+}
+.contact-image{
+  text-align: center;
+}
+.contact-image img{
+  border-radius: 6rem;
+  width: 11%;
+  margin-top: -3%;
+  transform: rotate(29deg);
+}
+.contact-form form{
+  padding: 14%;
+}
+.contact-form form .row{
+  margin-bottom: -7%;
+}
+.contact-form h3{
+  margin-top: -30%;
+  text-align: center;
+  color: #393A10;
+}
+.contact-form .btnContact {
+  width: 50%;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.5%;
+  background: #393A10;
+  font-weight: 600;
+  color: #fff;
+
+}
+.btnContactSubmit
+{
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  color: #fff;
+  background-color: #393A10;
+  border: none;
+  cursor: pointer;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right:auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  display: block;
+  float: none;
+  line-height: 24px;
+  position: static;
+  z-index: auto;
+}
+
