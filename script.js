@@ -1,8 +1,8 @@
  /*
 =============================================
-; Title: baumann-assignment-4.4.js
+; Title: baumann-assignment-5.3.js
 ; Author: Reva Baumann
-; Date: 12 May 2019
+; Date: 22 May 2019
 ; Modified by: Reva Baumann
 ; Description: Use button to generate email
 ;============================================
@@ -11,8 +11,8 @@
 /*
 Expected output:
   Reva Baumann
-  Exercise 3.2
-  29 April 2019
+  Exercise 5.3
+  22 May 2019
   Expected output
   Use client's preferred platform to generate email
 
@@ -22,7 +22,7 @@ Expected output:
 
 // lists details of formatted header, including first name, last name and assignment
 const header = require('./baumann-header.js');
-console.log(header.display("Reva", "Baumann", "Assignment 4.4));
+console.log(header.display("Reva", "Baumann", "Assignment 5.3));
 console.log("") // Line Break
 
 // Create email and use button to send email
