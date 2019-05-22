@@ -59,7 +59,7 @@ body {
     font-family: "Oswald", sans-serif;
   }
 
-  h2 {
+  h2, h3, h4, h5 {
     font:400;
     font-family: "Oswald", sans-serif;
   }
@@ -253,7 +253,7 @@ body {
   width: 100%;
   background-color: 393A10;
   color: black;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Oswald', sans-serif;
   text-align: center;
 }
 
