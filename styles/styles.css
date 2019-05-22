@@ -25,9 +25,6 @@ body {
     text-align:center;
  }
 
-.navbar {
-  align: right;
-}
 
  /* Drop Down Menu details,  */
   ul {
@@ -194,10 +191,9 @@ body {
   text-align: center;
 }
 .contact-image img{
-  border-radius: 6rem;
   width: 11%;
   margin-top: -3%;
-  transform: rotate(29deg);
+  margin-bottom: 10%;
 }
 .contact-form form{
   padding: 14%;
