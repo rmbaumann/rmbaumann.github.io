@@ -92,6 +92,10 @@ body {
   background-color: #8064A2;
 }
 
+.penguin {
+  display: block;
+}
+
 /* Place text in the middle of the image */
 .hero-text {
   text-align: center;
