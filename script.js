@@ -27,13 +27,31 @@ console.log("") // Line Break
 
 // Create email and use button to send email
 <script>
-function sendMail() {
-    var link = "mailto:revambaumann@gmail.com"
-             + "?cc=myCCaddress@example.com"
-             + "&subject=" + escape("This is my subject")
-             + "&body=" + escape(document.getElementById('myText').value)
-    ;
+function sendEmail()
+{
+     $.ajax({
+           url: "mail.php",
+           type: "POST",
+           success: function(response) {
+               if (!response) {
+                    alert("Something went wrong. Please try again");
+                    return;
+               }
 
-    window.location.href = link;
+               var parsedJSON = eval('('+response+')');
+
+               // If there's an error, display it.
+               if(parsedJSON.Error) {
+                  // Handle session timeout.
+                  if (parsedJSON.Error == "Timeout") {
+                       alert("Session timed out. Please login again.");
+                       window.location.reload();
+                   }
+                }
+               document.getElementById('mailStatus').innerHTML = "Email Sent successfully";  
+            }
+     });
 }
 </script>
+
+// end program
