@@ -58,9 +58,8 @@
             <h1 style="font-size:50px">Hi, I'm Reva</h1>
                 <p>I create beautiful & functional websites for clients large and small.</p>
                 <img src="Images/Reva1.jpg" alt="Reva Smiling">
-                <FORM>
-                    <INPUT TYPE="button" VALUE="Contact Me" onClick="parent.location='mailto:rmbaumann@my365.bellevue.edu?subject=Let's Collaborate&cc=rmbaumann@my365.bellevue.edu'">
-                    </FORM>
+                <button onclick="sendEmail()">Send Email</button>
+                <p id="mailStatus"></p>
             </div>
         </div>
 
@@ -210,20 +209,31 @@
 </div>
 
 <script>
-function sendMail() {
-    var link = "mailto:revambaumann@gmail.com"
-             + "?cc=myCCaddress@example.com"
-             + "&subject=" + escape("This is my subject")
-             + "&body=" + escape(document.getElementById('myText').value)
-    ;
+function sendEmail()
+{
+     $.ajax({
+           url: "mail.php",
+           type: "POST",
+           success: function(response) {
+               if (!response) {
+                    alert("Something went wrong. Please try again");
+                    return;
+               }
 
-    window.location.href = link;
-}
+               var parsedJSON = eval('('+response+')');
 
-function openWin() {
-    window.open("https://github.com/rmbaumann");
+               // If there's an error, display it.
+               if(parsedJSON.Error) {
+                  // Handle session timeout.
+                  if (parsedJSON.Error == "Timeout") {
+                       alert("Session timed out. Please login again.");
+                       window.location.reload();
+                   }
+                }
+               document.getElementById('mailStatus').innerHTML = "Email Sent successfully";  
+            }
+     });
 }
 </script>
-
     
 </html>
