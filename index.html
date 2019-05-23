@@ -32,6 +32,7 @@
                    </div>
                    <div class="logo">
                       <img class=“img-fluid” src="Images/penguinweb.png" alt=“Reva” href="#home" class="banner">
+                    <br />
                     </div>
                    <div class="menu">
                       <ul>
@@ -214,6 +215,24 @@ function sendEmail()
             }
      });
 }
+
+$(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
 </script>
     
 </html>
