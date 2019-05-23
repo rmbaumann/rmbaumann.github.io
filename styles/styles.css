@@ -25,6 +25,12 @@ body {
     text-align:center;
  }
 
+ .navbar {
+   font-style: "Oswald", sans-serif;
+   font-size: 30px;
+   color: #393A10;
+ }
+
 
  /* Drop Down Menu details,  */
   ul {
