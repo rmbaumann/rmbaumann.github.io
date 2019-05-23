@@ -72,10 +72,6 @@ body {
     font-family: "Oswald", sans-serif;
   }
 
-.penguin {
-  position: right;
-}
-
 /* The hero image */
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(reva1) );
