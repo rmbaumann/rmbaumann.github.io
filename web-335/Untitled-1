@@ -1,0 +1,29 @@
+// Class
+{
+    "_id": "JF80038804",
+    "name": "SPRHRO 480 - Saving Children from Villains",
+    "enrolls": [
+        {
+            "enroll_id": "Enroll-23939"
+        }
+    ]
+}
+
+// Student Details
+{
+    "_id": "ID993802",
+    "first_name": "Diana",
+    "last_name": "Prince",
+    "mi": "A+",
+    "enrolls": [
+        {
+            "enroll_id": "Enroll-23939"
+        }
+    ]
+}
+
+// Enroll
+{
+    "_id": "Enroll-23939",
+    "grade": 100
+}
